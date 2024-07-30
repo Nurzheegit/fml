@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For my beloved</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Choose the quality</h1>
+    <select id="qualitySelect" onchange="updateImage()">
+      <option value="">Select</option>
+      <option value="144p">144p</option>
+      <option value="360p">360p</option>
+      <option value="720p">720p</option>
+      <option value="1080p">1080p</option>
+    </select>
+    <div id="audioControls" style="display: none">
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="100"
+        value="100"
+        onchange="changeVolume(this.value)"
+      />
+    </div>
+    <audio id="audioPlayer" src="path/to/tek.mp3"></audio>
+    <div id="imageContainer">
+      <div id="slider" class="slider">
+        <!-- Слайды будут вставлены здесь через JavaScript -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
